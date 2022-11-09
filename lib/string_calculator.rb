@@ -1,6 +1,6 @@
 class StringCalculator
     def add(string)
-        string == nil ? 0 : string.split(",").map(&:to_i).sum
+        string == nil ? 0 : string.tr("\n",",").split(",").map(&:to_i).sum
     end
 end
 
