@@ -34,4 +34,12 @@ describe StringCalculator do
         result = calculator.add("10,20,30")
         expect(result).to eq(60)
     end
+
+    it "returns the sum of any numbers with another spliter" do
+        calculator = StringCalculator.new
+        result = calculator.add("1\n2,3\n4,5")
+        expect(result).to eq(15)
+        result = calculator.add("10\n20\n30")
+        expect(result).to eq(60)
+    end
 end
