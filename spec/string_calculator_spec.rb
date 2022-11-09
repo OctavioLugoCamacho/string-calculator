@@ -26,4 +26,12 @@ describe StringCalculator do
         result = calculator.add("7,11")
         expect(result).to eq(18)
     end
+
+    it "returns the sum of any numbers" do
+        calculator = StringCalculator.new
+        result = calculator.add("1,2,3,4,5")
+        expect(result).to eq(15)
+        result = calculator.add("10,20,30")
+        expect(result).to eq(60)
+    end
 end
