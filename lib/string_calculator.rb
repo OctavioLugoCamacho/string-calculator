@@ -1,6 +1,6 @@
 class StringCalculator
     def add(string)
-        1
+        0
     end
 end
 
